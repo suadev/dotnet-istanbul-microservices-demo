@@ -1,0 +1,193 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "api",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-api",
+            "program": "${workspaceFolder}/DotnetIst.Api/src/Api/bin/Debug/netcoreapp2.2/Api.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/DotnetIst.Api/src/Api",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart",
+            "launchBrowser": {
+                "enabled": true,
+                "args": "${auto-detect-url}",
+                "windows": {
+                    "command": "cmd.exe",
+                    "args": "/C start ${auto-detect-url}"
+                },
+                "osx": {
+                    "command": "open"
+                },
+                "linux": {
+                    "command": "xdg-open"
+                }
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:5000"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": "customer",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-customer",
+            "program": "${workspaceFolder}/DotnetIst.Services.Customers/src/Services.Customers/bin/Debug/netcoreapp2.2/Services.Customers.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/DotnetIst.Services.Customers/src/Services.Customers",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart",
+            "launchBrowser": {
+                "enabled": true,
+                "args": "${auto-detect-url}",
+                "windows": {
+                    "command": "cmd.exe",
+                    "args": "/C start ${auto-detect-url}"
+                },
+                "osx": {
+                    "command": "open"
+                },
+                "linux": {
+                    "command": "xdg-open"
+                }
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:5005"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": "products",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-product",
+            "program": "${workspaceFolder}/DotnetIst.Services.Products/src/Services.Products/bin/Debug/netcoreapp2.2/Services.Products.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/DotnetIst.Services.Products/src/Services.Products",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart",
+            "launchBrowser": {
+                "enabled": true,
+                "args": "${auto-detect-url}",
+                "windows": {
+                    "command": "cmd.exe",
+                    "args": "/C start ${auto-detect-url}"
+                },
+                "osx": {
+                    "command": "open"
+                },
+                "linux": {
+                    "command": "xdg-open"
+                }
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:5010"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": "orders",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-order",
+            "program": "${workspaceFolder}/DotnetIst.Services.Orders/src/Services.Orders/bin/Debug/netcoreapp2.2/Services.Orders.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/DotnetIst.Services.Orders/src/Services.Orders",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart",
+            "launchBrowser": {
+                "enabled": true,
+                "args": "${auto-detect-url}",
+                "windows": {
+                    "command": "cmd.exe",
+                    "args": "/C start ${auto-detect-url}"
+                },
+                "osx": {
+                    "command": "open"
+                },
+                "linux": {
+                    "command": "xdg-open"
+                }
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:5015"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": "notifications",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-notification",
+            "program": "${workspaceFolder}/DotnetIst.Services.Notifications/src/Services.Notifications/bin/Debug/netcoreapp2.2/Services.Notifications.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/DotnetIst.Services.Notifications/src/Services.Notifications",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart",
+            "launchBrowser": {
+                "enabled": true,
+                "args": "${auto-detect-url}",
+                "windows": {
+                    "command": "cmd.exe",
+                    "args": "/C start ${auto-detect-url}"
+                },
+                "osx": {
+                    "command": "open"
+                },
+                "linux": {
+                    "command": "xdg-open"
+                }
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:5020"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "All",
+            "configurations": [
+                "api",
+                "customer",
+                "products",
+                "orders",
+                "notifications"
+            ]
+        },
+        {
+            "name": "Api+Customer",
+            "configurations": [
+                "api",
+                "customer"
+            ]
+        }
+    ]
+}

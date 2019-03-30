@@ -1,0 +1,55 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-api",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/DotnetIst.Api/src/Api/Api.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build-customer",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/DotnetIst.Services.Customers/src/Services.Customers/Services.Customers.csproj",
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build-product",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/DotnetIst.Services.Products/src/Services.Products/Services.Products.csproj",
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build-order",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/DotnetIst.Services.Orders/src/Services.Orders/Services.Orders.csproj",
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "build-notification",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/DotnetIst.Services.Notifications/src/Services.Notifications/Services.Notifications.csproj",
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}

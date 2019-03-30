@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "1ce3bc02-2070-441c-9d1a-386db626d78b",
+		"name": "Dotnet_Istanbul",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "0-RegisterCustomer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"FirstName\" :\"Suat\",\n\t\"LastName\" :\"Köse\",\n\t\"Address\" :\"Üsküdar\",\n\t\"Email\" :\"suadev@gmail.com\",\n\t\"Password\": \"12345\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/customer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1-GetToken",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"Email\" :\"suadev@gmail.com\",\n\t\"Password\" :\"12345\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2-AddToBasket-Success",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InN1YWRldkBnbWFpbC5jb20iLCJDdXN0b21lcklkIjoiMDQ1NzFlNDQtMDJjYi00Mzc1LWE0MTMtN2NiYTMxZDk2NGMyIiwibmJmIjoxNTUzNjMxNDk5LCJleHAiOjE1NTM3MTc4OTksImlhdCI6MTU1MzYzMTQ5OSwiaXNzIjoid2l6bG8uYXBpLmRlbW8iLCJhdWQiOiJTb21lQ3VzdG9tQXBwIn0.cQOe_IVK8oYzjiDdaNOMo5aviiDMt_gX-PYL-n_NPjc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ProductId\" :\"dc87e9ce-6d8d-4a01-a62d-2c2326472811\",\n\t\"Quantity\": 10\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/basket",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"basket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3-CreateOrder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InN1YWRldkBnbWFpbC5jb20iLCJDdXN0b21lcklkIjoiMDQ1NzFlNDQtMDJjYi00Mzc1LWE0MTMtN2NiYTMxZDk2NGMyIiwibmJmIjoxNTUzNjMxNDk5LCJleHAiOjE1NTM3MTc4OTksImlhdCI6MTU1MzYzMTQ5OSwiaXNzIjoid2l6bG8uYXBpLmRlbW8iLCJhdWQiOiJTb21lQ3VzdG9tQXBwIn0.cQOe_IVK8oYzjiDdaNOMo5aviiDMt_gX-PYL-n_NPjc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"order"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
