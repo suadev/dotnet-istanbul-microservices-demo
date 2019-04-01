@@ -1,6 +1,10 @@
 Presentation : https://speakerdeck.com/suadev/microservice-architecture-and-implementation-with-asp-dot-net-core
 
-## Prerequities
+The aim of the demo is showing event-driven communication between the microservices. 
+
+<img src="https://speakerd.s3.amazonaws.com/presentations/d74133b1f0d1409ab6093806e005f64e/preview_slide_17.jpg" />
+
+## Prerequities;
 
 * DotNet Core SDK 2.2
 
