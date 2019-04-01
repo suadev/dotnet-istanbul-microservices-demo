@@ -1,6 +1,6 @@
 Presentation : https://speakerdeck.com/suadev/microservice-architecture-and-implementation-with-asp-dot-net-core
 
-## Prerequities;
+## Prerequities
 
 * DotNet Core SDK 2.2
 
@@ -21,3 +21,15 @@ Presentation : https://speakerdeck.com/suadev/microservice-architecture-and-impl
 
 
 P.S. You can use ***.postman_project/Dotnet_Istanbul.postman_collection.json*** file for a quick test from Postman.
+
+## Tool Set
+
+* Asp.Net Core 2.2 
+* Entity Framework Core 2.2
+* PostgreSQL - Npgsql
+* Serilog - Elasticsearch - Kibana
+* RabbitMQ - RawRabbit
+* Docker Containers ( PostgreSQL, RabbitMQ, * Elasticsearch and Kibana )
+* pgAdmin or Azure Data Studio
+* VS Code
+
