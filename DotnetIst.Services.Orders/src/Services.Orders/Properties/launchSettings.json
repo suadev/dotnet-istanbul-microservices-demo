@@ -19,7 +19,7 @@
     "Services.Orders": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "//localhost:5015",
+      "applicationUrl": "http://localhost:5015",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
