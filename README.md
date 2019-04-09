@@ -4,7 +4,8 @@ The aim of the demo is showing ***event-driven and eventual consistent communica
 
 <img src="https://speakerd.s3.amazonaws.com/presentations/d74133b1f0d1409ab6093806e005f64e/preview_slide_17.jpg" />
 
-## Prerequities;
+
+## Prerequities
 
 * DotNet Core SDK 2.2
 
@@ -23,8 +24,8 @@ The aim of the demo is showing ***event-driven and eventual consistent communica
 
 * Wait until all microservices are up and running.
 
-
 P.S. You can use ***.postman_project/Dotnet_Istanbul.postman_collection.json*** file for a quick test from Postman.
+
 
 ## Tool Set
 
@@ -33,7 +34,6 @@ P.S. You can use ***.postman_project/Dotnet_Istanbul.postman_collection.json*** 
 * PostgreSQL - Npgsql
 * Serilog - Elasticsearch - Kibana
 * RabbitMQ - RawRabbit
-* Docker Containers ( PostgreSQL, RabbitMQ, * Elasticsearch and Kibana )
+* Docker Containers ( PostgreSQL, RabbitMQ, Elasticsearch and Kibana )
 * pgAdmin or Azure Data Studio
 * VS Code
-
